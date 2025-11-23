@@ -1,0 +1,55 @@
+{
+  "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+  "version": 3,
+  "final_space": true,
+  "console_title_template": "{{ .Shell }} in {{ .Folder }}",
+  "blocks": [
+    {
+      "type": "prompt",
+      "alignment": "left",
+      "segments": [
+        {
+        "type": "path",
+        "style": "diamond",
+        "leading_diamond": "\ue0b6",
+        "trailing_diamond": "\ue0b0",
+        "background": "#8568ac",
+        "foreground": "#ffffff",
+        "template": " 📁 {{ .Path }} ",
+        "properties": {
+          "style": "folder",
+          "home_icon": " ."
+        }
+      }
+      ]
+    },
+    {
+      "type": "rprompt",
+      "segments": [
+        {
+          "type": "executiontime",
+          "style": "diamond",
+          "leading_diamond": "\ue0b6",
+          "trailing_diamond": "\ue0b0",
+          "background": "#83769c",
+          "foreground": "#ffffff",
+          "template": "⏱️ {{ .FormattedMs }} ",
+          "properties": {
+            "threshold": 0,
+            "style": "austin",
+            "always_enabled": true
+          }
+        },
+        {
+          "type": "time",
+          "style": "diamond",
+          "leading_diamond": "\ue0b6",
+          "trailing_diamond": "\ue0b4",
+          "background": "#2e9599",
+          "foreground": "#f3efef",
+          "template": "🕐 {{ .CurrentDate | date \"3:04PM\" }} "
+        }
+      ]
+    }
+  ]
+}

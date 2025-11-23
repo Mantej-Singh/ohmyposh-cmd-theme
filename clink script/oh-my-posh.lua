@@ -1,0 +1,1 @@
+load(io.popen('oh-my-posh init cmd --config "' .. os.getenv('LOCALAPPDATA') .. '\\Programs\\oh-my-posh\\themes\\mantej-singh.json"'):read("*a"))()
