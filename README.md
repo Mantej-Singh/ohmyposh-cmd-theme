@@ -124,19 +124,19 @@ oh-my-posh font install
 
 1. Use arrow keys to select: **`MesloLGM Nerd Font`**
 2. Press **Enter** to install
-3. Wait for ""Font installed successfully""
+3. Wait for "Font installed successfully"
 
 #### Method 2: Manual Install
 
 1. **Download:**
    - Go to: <https://www.nerdfonts.com/font-downloads>
-   - Download: **""Meslo""** or **""CascadiaCode""**
+   - Download: **"Meslo"** or **"CascadiaCode"**
 
 2. **Extract the ZIP file**
 
 3. **Install fonts:**
    - Select all `.ttf` files
-   - Right-click → ""Install for all users""
+   - Right-click → "Install for all users"
 
 #### Configure CMD to use Nerd Font
 
@@ -151,11 +151,11 @@ Press `Ctrl + ,` to open settings, then add:
 
 ```json
 {
-  ""profiles"": {
-    ""defaults"": {
-      ""font"": {
-        ""face"": ""MesloLGM Nerd Font"",
-        ""size"": 10
+  "profiles": {
+    "defaults": {
+      "font": {
+        "face": "MesloLGM Nerd Font",
+        "size": 10
       }
     }
   }
@@ -206,7 +206,7 @@ notepad %LOCALAPPDATA%\clink\oh-my-posh.lua
 #### Paste this Lua script
 
 ```lua
-load(io.popen('oh-my-posh init cmd --config ""' .. os.getenv('LOCALAPPDATA') .. '\\Programs\\oh-my-posh\\themes\\mantej-singh.json""'):read(""*a""))()
+load(io.popen('oh-my-posh init cmd --config "' .. os.getenv('LOCALAPPDATA') .. '\\Programs\\oh-my-posh\\themes\\mantej-singh.json"'):read("*a"))()
 ```
 
 **Or download directly:** [Download oh-my-posh.lua](clink-scripts/oh-my-posh.lua)
@@ -260,9 +260,9 @@ notepad %LOCALAPPDATA%\Programs\oh-my-posh\themes\mantej-singh.json
 In the JSON, find the `path` segment and modify:
 
 ```json
-""properties"": {
-  ""style"": ""folder"",     // Shows only current folder name
-  ""home_icon"": "" .""      // Shows "" ."" for home directory
+"properties": {
+  "style": "folder",     // Shows only current folder name
+  "home_icon": " ."      // Shows " ." for home directory
 }
 ```
 
@@ -270,19 +270,19 @@ In the JSON, find the `path` segment and modify:
 
 | Style | Example |
 |-------|---------|
-| `""folder""` | `Screenshots` |
-| `""full""` | `C:\Users\mantej\Screenshots` |
-| `""full""` + `""home_icon"": ""~""` | `~\Screenshots` |
-| `""agnoster_short""` | `C: .. Screenshots` |
+| `"folder"` | `Screenshots` |
+| `"full"` | `C:\Users\mantej\Screenshots` |
+| `"full"` + `"home_icon": "~"` | `~\Screenshots` |
+| `"agnoster_short"` | `C: .. Screenshots` |
 
 #### Change colors
 
 Find these hex color codes in the JSON:
 
 ```json
-""background"": ""#8568ac""  // Folder background (purple)
-""background"": ""#83769c""  // Execution time background
-""background"": ""#2e9599""  // Time background (teal)
+"background": "#8568ac"  // Folder background (purple)
+"background": "#83769c"  // Execution time background
+"background": "#2e9599"  // Time background (teal)
 ```
 
 Replace with your preferred colors!
@@ -314,7 +314,7 @@ Verify Clink is active. If not, reinstall Clink and restart CMD.
 **Solution:**
 
 ```cmd
-oh-my-posh init cmd --config ""%LOCALAPPDATA%\Programs\oh-my-posh\themes\mantej-singh.json""
+oh-my-posh init cmd --config "%LOCALAPPDATA%\Programs\oh-my-posh\themes\mantej-singh.json"
 ```
 
 Check for JSON syntax errors in your theme file.
@@ -342,7 +342,7 @@ winget upgrade JanDeDobbeleer.OhMyPosh
 ### Test theme immediately (without restart)
 
 ```cmd
-oh-my-posh init cmd --config ""%LOCALAPPDATA%\Programs\oh-my-posh\themes\mantej-singh.json""
+oh-my-posh init cmd --config "%LOCALAPPDATA%\Programs\oh-my-posh\themes\mantej-singh.json"
 ```
 
 ### Edit your theme
