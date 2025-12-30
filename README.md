@@ -180,9 +180,9 @@ notepad mantej-singh.json
 
 #### Paste the theme content
 
-Copy the contents from [`themes/mantej-singh.json`](themes/mantej-singh.json) in this repository and paste into Notepad.
+Copy the contents from [`themes/mantej-singh.json`](theme/mantej-singh.json) in this repository and paste into Notepad.
 
-**Or download directly:** [Download mantej-singh.json](themes/mantej-singh.json)
+**Or download directly:** [Download mantej-singh.json](theme/mantej-singh.json)
 
 Save the file (Ctrl + S) and close Notepad.
 
@@ -209,7 +209,7 @@ notepad %LOCALAPPDATA%\clink\oh-my-posh.lua
 load(io.popen('oh-my-posh init cmd --config "' .. os.getenv('LOCALAPPDATA') .. '\\Programs\\oh-my-posh\\themes\\mantej-singh.json"'):read("*a"))()
 ```
 
-**Or download directly:** [Download oh-my-posh.lua](clink-scripts/oh-my-posh.lua)
+**Or download directly:** [Download oh-my-posh.lua](clink-script/oh-my-posh.lua)
 
 Save the file (Ctrl + S) and close Notepad.
 
